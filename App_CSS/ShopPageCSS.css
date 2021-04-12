@@ -1,0 +1,501 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed_cart_btn {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    z-index: 5000;
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-image: url('../App_Pic/cart_white.png');
+    background-repeat: no-repeat;
+    background-position: 12px 15px;
+    background-color: red;
+    background-size: 30px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s;
+}
+
+    .fixed_cart_btn:hover {
+        cursor: pointer;
+        box-shadow: 0 0 5px dimgray;
+    }
+
+.main {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+    min-width: 1250px;
+}
+
+    .main .left_menu_box {
+        width: 200px;
+        height: 100%;
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+        .main .left_menu_box .leftmenu {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+.menutitle {
+    width: 100%;
+    height: 42px;
+    font-size: medium;
+    text-align: center;
+    line-height: 42px;
+    background-color: red;
+    border: none;
+    color: white;
+    outline: none;
+    font-weight: bold;
+}
+
+.leftmenu .menuitem {
+    width: 100%;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: solid 1px gainsboro;
+    color: black;
+    outline: none;
+    text-align: left;
+    text-indent: 16px;
+    transition: all 0.3s;
+}
+
+    .leftmenu .menuitem:hover {
+        cursor: pointer;
+        background-color: gainsboro;
+        font-weight: bold;
+    }
+
+    .leftmenu .menuitem:active {
+        cursor: pointer;
+        background-color: darkgray;
+        font-weight: bold;
+    }
+
+.middle_main_box {
+    width: calc(100% - 200px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    min-width: 1000px;
+    box-sizing: border-box;
+}
+
+    .middle_main_box .big_commercial {
+        width: 750px;
+        height: 315px;
+        margin: 0;
+        padding: 0;
+        min-width: 750px;
+        min-height: 315px;
+        float: left;
+        position: relative;
+    }
+
+        .middle_main_box .big_commercial .list {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+            .middle_main_box .big_commercial .list li {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: opacity 0.5s linear
+            }
+
+                .middle_main_box .big_commercial .list li.current {
+                    opacity: 1;
+                }
+
+            .middle_main_box .big_commercial .list:hover {
+                cursor: pointer;
+            }
+
+        .middle_main_box .big_commercial .count {
+            margin-top: -30px;
+            width: 140px;
+            position: relative;
+            height: 20px;
+            left: 570px;
+        }
+
+            .middle_main_box .big_commercial .count li {
+                color: white;
+                float: left;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                margin-right: 5px;
+                overflow: hidden;
+                background: dimgray;
+                opacity: 0.7;
+                border-radius: 20px;
+                text-indent: 5px;
+                line-height: 20px;
+            }
+
+                .middle_main_box .big_commercial .count li.current {
+                    color: white;
+                    opacity: 1;
+                    font-weight: 700;
+                    background: red
+                }
+
+
+.book_list_box {
+    width: 92%;
+    height: auto;
+    border: solid 1px gray;
+    min-width: 900px;
+    clear: both;
+    border-top: none;
+    margin-bottom: 15px;
+}
+
+    .book_list_box .book_list_title {
+        width: 100%;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: bisque;
+    }
+
+        .book_list_box .book_list_title .title_tip {
+            width: auto;
+            height: 25px;
+            padding: 0 30px;
+            background-color: rgba(249,216,169,1);
+            line-height: 25px;
+            font-size: small;
+            float: left;
+            position: relative;
+        }
+
+        .book_list_box .book_list_title .title_decorate {
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            border: solid 12.5px bisque;
+            border-left: solid 12.5px rgba(249,216,169,1);
+            float: left;
+            position: relative;
+        }
+
+        .book_list_box .book_list_title .pager {
+            float: right;
+            position: relative;
+            width: 150px;
+            height: 25px;
+            margin-right: 20px;
+        }
+
+            .book_list_box .book_list_title .pager .pagebtn {
+                float: left;
+                position: relative;
+                width: 25px;
+                height: 20px;
+                margin: 0;
+                margin-top: 2.5px;
+                padding: 0;
+                text-align: center;
+                color: red;
+                background-color: white;
+                border: solid 1px dimgray;
+                font-size: small;
+                font-weight: bolder;
+                outline: none;
+                border-radius: 5px;
+                box-shadow: 0 -5px 5px gainsboro inset;
+                transition: all 0.2s;
+            }
+
+                .book_list_box .book_list_title .pager .pagebtn:hover {
+                    cursor: pointer;
+                    border: solid 1px black;
+                    box-shadow: 0 -5px 5px lightgray inset;
+                }
+
+            .book_list_box .book_list_title .pager .pagetip {
+                float: left;
+                position: relative;
+                width: 80px;
+                height: 25px;
+                line-height: 25px;
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+                font-size: small;
+            }
+
+    .book_list_box .book_list {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .book_list_box .book_list_footer {
+        width: 100%;
+        height: 50px;
+    }
+
+        .book_list_box .book_list_footer .jump_to {
+            width: auto;
+            height: 50px;
+            float: right;
+            position: relative;
+        }
+
+.pagejump {
+    float:left;
+    width: auto;
+    position: relative;
+    margin: 0;
+}
+
+.pagebtn {
+    float: left;
+    position: relative;
+    width: 60px;
+    height: 20px;
+    margin-top: 14px;
+    padding: 0;
+    text-align: center;
+    color: red;
+    background-color: white;
+    border: solid 1px dimgray;
+    font-size: small;
+    outline: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 -5px 5px gainsboro inset;
+    transition: all 0.2s;
+}
+
+    .pagebtn:hover {
+        cursor: pointer;
+        border: solid 1px black;
+        box-shadow: 0 -5px 5px lightgray inset;
+    }
+
+.pagenumbtn {
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    background-color: wheat;
+    font-size: small;
+    outline: none;
+    margin-left: 10px;
+    border: none;
+}
+
+    .pagenumbtn:hover {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+    }
+
+.pagenumnow {
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-size: small;
+    outline: none;
+    margin-left: 10px;
+    border: none;
+}
+
+.pagenumelip {
+    float: left;
+    position: relative;
+    width: 15px;
+    line-height: 25px;
+    height: 20px;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    font-size: small;
+    outline: none;
+    margin-left: 10px;
+    letter-spacing: 0.2em;
+}
+
+.book_list_box .book_list_footer .select_page {
+    width: 215px;
+    height: 50px;
+    float: right;
+    position: relative;
+    padding-right: 25px;
+}
+
+    .book_list_box .book_list_footer .select_page .tarpage {
+        width: 3em;
+        height: 1em;
+        float: right;
+        position: relative;
+        margin: 0 10px;
+        margin-top: 15px;
+    }
+
+.right_info_box {
+    width: calc(100% - 750px);
+    height: 315px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    min-width: 220px;
+    max-width: 290px;
+    background-color: white;
+}
+
+.infocard {
+    border: solid 2px #d74545;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+    height: 311px;
+    background: #d74545;
+}
+
+    .infocard .name {
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: -32px;
+        margin-top: 10px;
+    }
+
+    .infocard .avater_box {
+        width: 100%;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+        .infocard .avater_box .avater_pic {
+            border-radius: 100%;
+            border: solid whitesmoke 6px;
+            width: 50%;
+            max-width: 150px;
+            margin: 0;
+            margin-left: 23%;
+        }
+
+    .infocard .info {
+        background-color: whitesmoke;
+        margin-top: -7em;
+        color: black;
+        padding: 5em 0.5em 1em 0.5em;
+        margin-bottom: 6px;
+    }
+
+        .infocard .info ul {
+            font-size: small;
+            padding: 0;
+            padding-top: 1.5em;
+            list-style: none;
+        }
+
+.info ul li {
+    line-height: 2em;
+    text-align: left;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 0 auto;
+}
+
+.logout_btn {
+    background: none;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+}
+
+.logout_btn:hover {
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.flyer_img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.edit_info_btn {
+    width: auto;
+    padding: 5px;
+    border: solid 1px red;
+    background-color: red;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.edit_info_btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: red;
+}

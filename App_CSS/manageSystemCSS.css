@@ -1,0 +1,475 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#AwokeNum {
+    padding-top: 2px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
+}
+
+    #AwokeNum li {
+        float: left;
+        margin: 3px;
+    }
+
+    #AwokeNum img {
+        margin-bottom: -3px;
+    }
+
+#Head1 {
+    width: 100%;
+    height: 64px;
+    border: 0px solid #FFFFFF;
+    margin: 0px auto;
+    background: url("../App_Pic/syspic/top_bg.gif") repeat-x;
+}
+
+#Logo {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    float: left;
+}
+
+#Head1Right {
+    float: right;
+    height: 25px;
+}
+
+#Head1Right_UserName {
+    float: left;
+    height: 100%;
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#014f83,endcolorstr=#2b6798,gradientType=1);
+    padding-top: 6px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #b3e1ff;
+}
+
+    #Head1Right_UserName img {
+        margin-bottom: -3px;
+    }
+
+#Head1Right_UserDept {
+    float: left;
+    background-color: transparent;
+    height: 100%;
+    padding-top: 7px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #75abd2;
+}
+
+#Head1Right_UserSetup {
+    float: left;
+    height: 100%;
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #f6d881;
+}
+
+    #Head1Right_UserSetup a {
+        color: #f6d881;
+        text-decoration: none;
+    }
+
+    #Head1Right_UserSetup img {
+        margin-bottom: -3px;
+    }
+
+#Head1Right_Time {
+    font-size: 12px;
+    font-family: "宋体";
+    color: #b3e1ff;
+    float: left;
+    height: 100%;
+    padding-top: 7px;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+#Head1Right_Button {
+    position: absolute;
+    top: 35px;
+    right: 20%;
+    float: left;
+}
+
+    #Head1Right_Button img {
+        border: 0;
+        float: right;
+    }
+
+#Head1Right_SystemButton {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+    #Head1Right_SystemButton img {
+        border: 0;
+        float: right;
+    }
+
+#Head2 {
+    width: 100%;
+    height: 36px;
+    margin-left: auto;
+    margin: 0;
+    background: url("../App_Pic/syspic/head2_bg.gif") repeat-x;
+    border-top: 1px solid #a0c6e1;
+    border-bottom: 1px solid #ffffff;
+}
+
+#Head2_Awoke {
+    float: left;
+    height: 100%;
+    padding-left: 19px;
+    padding-top: 2px;
+}
+
+    #Head2_Awoke A {
+        font-size: 12px;
+        color: #ffffff;
+        TEXT-DECORATION: none
+    }
+
+.Line {
+    border-left: 1px solid #005a98;
+    border-right: 1px solid #a0c6e1;
+    width: 2px;
+    height: 17px;
+}
+
+#Head2_FunctionList {
+    float: right;
+    height: 100%;
+    padding-right: 26px;
+    font-size: 13px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+    #Head2_FunctionList td {
+        font-size: 12px;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+.Btn {
+    float: left;
+    height: 23px;
+    padding-top: 6px;
+    background-position: 1px 4px;
+}
+
+.Btn_Left {
+    height: 24px;
+    width: 4px;
+    background: url("../App_Pic/syspic/btn_left.gif") no-repeat;
+}
+
+.Btn_Right {
+    height: 24px;
+    width: 4px;
+    background: url("../App_Pic/syspic/btn_right.gif") no-repeat;
+}
+
+.Btn_Content {
+    padding-left: 5px;
+    padding-right: 5px;
+    background: url("../App_Pic/syspic/btn_bg.gif");
+}
+
+.Btn_Space {
+    float: left;
+    width: 5px;
+    height: 100%;
+}
+
+.Menu_head_Table {
+    border: solid 1px #D1D1D1;
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#F8F8F8,endColorStr=#DDDDDD);
+}
+
+.Menu_head_Title {
+    PADDING-TOP: 3px;
+    font-size: 10pt;
+    color: #822219;
+}
+
+.Menu_layer1_Table {
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#A9C6FF,endColorStr=#CFE5F9);
+}
+
+.Menu_layer1_Title {
+    padding-top: 3px;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.Menu_layer2_Table {
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=1,startColorStr=#C0D6FF,endColorStr=#D6ffFF);
+}
+
+.Menu_layer2_Title {
+    padding-top: 3px;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.Menu_mid {
+    background: #FFFFFF;
+    height: 1px;
+}
+
+#messageArea {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+#Menu {
+    padding: 0px;
+    float: left;
+    left: 0;
+    position: absolute;
+    width: 155px;
+    height: calc(100% - 110px);
+    margin: 0px;
+    background: #d8edfc;
+    font-size: 12px;
+    scrollbar-base-color: #dbecf8;
+    scrollbar-arrow-color: #2a8ed1;
+    scrollbar-track-color: #bdddf2;
+    scrollbar-3dlight-color: #2886c5;
+    scrollbar-darkshadow-color: #2886c5;
+    scrollbar-face-color: #dbecf8;
+    scrollbar-shadow-color: #dbecf8;
+    border: 3px solid #4891c6;
+    min-width: 154px;
+}
+
+img.Icon {
+    margin-bottom: -4px;
+}
+
+#MenuUl, ul.MenuLevel1 {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    width: calc(100% - 1px);
+}
+
+ul.MenuLevel2 {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background: #d8ebf7;
+}
+
+.level1 {
+    font-weight: bold;
+    color: #005790;
+    padding-bottom: 1px;
+}
+
+.level2 {
+    font-weight: normal;
+    color: #005790;
+}
+
+.level1Style {
+    width: 154px;
+    height: 24px;
+    background: url("../App_Pic/syspic/menu_btn_bg.gif") no-repeat;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.level1SelectedStyle {
+    width: 155px;
+    height: 24px;
+    background: url("../App_Pic/syspic/menu_btn_bg_selected.gif") no-repeat;
+    padding-left: 20px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.level2Style {
+    width: 100%;
+    height: 24px;
+    background-image: url("../App_Pic/syspic/menu_arrow_single.gif");
+    background-repeat: no-repeat;
+    background-position: 36px 8px;
+    background-color: #8ec4e9;
+    border-top: 1px solid #eff6fb;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    line-height: 24px;
+    font-size: 12px;
+    color: #005790;
+    border-bottom: solid 1px steelblue;
+}
+
+.rightmain {
+    width: calc(100% - 155px);
+    height: calc(100% - 110px);
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+.search_textbox {
+    width: 200px;
+    height: 18px;
+    text-indent: 5px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.mGrid {
+    width: 98%;
+    height: 100%;
+    background-color: #fff;
+    margin: 3px 1% 0 1%;
+    border: solid 1px #525252;
+    border-collapse: collapse;
+}
+
+    .mGrid td {
+        padding: 2px;
+        border: solid 1px #c1c1c1;
+        color: #717171;
+    }
+
+    .mGrid th {
+        padding: 1px 2px;
+        color: #fff;
+        background-image: linear-gradient(Dimgray,Black);
+        background-color: #424242;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .mGrid .alt {
+        background-color: #fcfcfc;
+        background-image: linear-gradient(whitesmoke, white);
+    }
+
+    .mGrid .pgr {
+        background-color: #424242;
+        background-image: linear-gradient(black, dimgray);
+    }
+
+        .mGrid .pgr table {
+            margin: 5px 0;
+        }
+
+        .mGrid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .mGrid .pgr a {
+            color: #666;
+            text-decoration: none;
+        }
+
+            .mGrid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+
+.grid_btn {
+    width: 100%;
+}
+
+.grid_checkbox {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.detail_table {
+    width: 95%;
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-top: -10px;
+    border-bottom: dashed 1px lightgray;
+    padding-bottom: 5px;
+}
+
+.book_detail_panel {
+    width: calc(100% - 20px);
+    height: calc(100% - 110px);
+    margin-left: 20px;
+    padding: 0;
+    background-color: white;
+    z-index: 5000;
+}
+
+.detail_img_box {
+    width: 250px;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+}
+
+.detail_info_box {
+    width: calc(100% - 275px);
+    height: 100%;
+    float: left;
+}
+
+.return_header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.submit_box {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.detail_submit_btn {
+    margin-left: calc(50% - 85px);
+    margin-right: 20px;
+    height: 40px;
+    width: 70px;
+}
+
+.detail_cancel_btn {
+    width: 70px;
+    height: 40px;
+}

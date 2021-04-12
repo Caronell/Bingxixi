@@ -1,0 +1,46 @@
+.cd-top {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 19px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: url('../App_Pic/method-draw-image.svg') no-repeat center 50%;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+    border: solid 1px darkgray;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+	/* the button becomes visible */
+	visibility: visible;
+	opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+	/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+	opacity: .5;
+}
+
+    .cd-top:hover {
+        border-color: dodgerblue;
+        background: url('../App_Pic/cd-top-arrow.svg') no-repeat center 50%;
+        background-color: dodgerblue;
+        opacity: 1;
+    }

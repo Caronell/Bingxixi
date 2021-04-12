@@ -1,0 +1,78 @@
+﻿body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tip_head {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: x-large;
+    color: darkgray;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-bottom: solid 1px red;
+}
+
+.price_check {
+    width: 80%;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    margin: 0 10%;
+    margin-bottom: 10px;
+}
+
+.btn_zone {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.ok_btn {
+    width: 200px;
+    height: 48px;
+    text-align: center;
+    float: right;
+    margin-right: 10%;
+    background-color: red;
+    border: none;
+    color: white;
+    transition: all 0.2s;
+    font-weight: bold;
+    outline: none;
+    font-size: medium;
+}
+
+.ok_btn:hover {
+    cursor: pointer;
+}
+
+.cancel_btn {
+    width: 100px;
+    height: 48px;
+    float: right;
+    margin-right: 10px;
+    background-image: url("../App_Pic/return_icon.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 0 14px;
+    background-color: transparent;
+    text-indent: 20px;
+    border: none;
+    color: dodgerblue;
+    outline: none;
+}
+
+    .cancel_btn:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }

@@ -1,0 +1,297 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    min-width: 1250px;
+}
+
+    .main .breadcrumb {
+        width: calc(100%-32px);
+        height: 32px;
+        line-height: 32px;
+        margin-bottom: 8px;
+        padding-left: 32px;
+        background-color: whitesmoke;
+    }
+
+        .main .breadcrumb .linktext {
+            color: black;
+            text-decoration: none;
+            font-size: small;
+            float: left;
+            position: relative;
+        }
+
+    .main .left_box {
+        width: 320px;
+        height: 100%;
+        float: left;
+        position: relative;
+        margin: 0;
+        margin-right: 20px;
+        padding: 0;
+    }
+
+        .main .left_box .middle_pic_box {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            overflow: hidden;
+        }
+
+            .main .left_box .middle_pic_box img {
+                margin: 0;
+                padding: 0;
+                border: none;
+                outline: none;
+                vertical-align: top
+            }
+
+            .main .left_box .middle_pic_box:hover {
+                cursor: crosshair;
+            }
+
+            .main .left_box .middle_pic_box .zoom_up_bg {
+                width: 160px;
+                height: 160px;
+                position: absolute;
+                background-image: url("../App_Pic/zoom_pup.png");
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+                left: 0;
+                top: 0;
+                display: none;
+            }
+
+            .main .left_box .middle_pic_box .middle_pic {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+        .main .left_box .big_pic_box {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            left: 320px;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            border: solid 1px gainsboro;
+            overflow: hidden;
+            z-index: 5000;
+        }
+
+            .main .left_box .big_pic_box .big_pic {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+            }
+
+    .main .mid_box {
+        width: calc(100% - 560px);
+        min-width: 700px;
+        height: 320px;
+        float: left;
+        position: relative;
+        padding-right: 20px;
+    }
+
+        .main .mid_box .book_info_box {
+            width: 100%;
+            height: 320px;
+            float: left;
+            position: relative;
+            margin: 0;
+            padding-top: 10px;
+        }
+
+            .main .mid_box .book_info_box .book_details_box {
+                width: 100%;
+                height: 180px;
+                margin-top: 16px;
+                padding: 0;
+            }
+
+                .main .mid_box .book_info_box .book_details_box .book_details {
+                    width: calc(100% - 400px);
+                    min-width: 250px;
+                    height: 180px;
+                    margin: 0;
+                    padding: 0;
+                    float: left;
+                    position: relative;
+                }
+
+.buy_box {
+    width: 200px;
+    height: 180px;
+    float: left;
+    position: relative;
+}
+
+    .buy_box .modi_btn {
+        width: 40px;
+        height: 30px;
+        float: left;
+        position: relative;
+        margin: 0;
+        border: solid 1px darkgray;
+        color: black;
+        background-color: gainsboro;
+        font-size: medium;
+        line-height: 22px;
+        font-weight: bolder;
+        outline: none;
+    }
+
+        .buy_box .modi_btn:hover {
+            cursor: pointer;
+        }
+
+        .buy_box .modi_btn:active {
+            cursor: pointer;
+            background-color: gray;
+        }
+
+
+    .buy_box .buy_num {
+        width: 50px;
+        height: 26px;
+        line-height: 30px;
+        float: left;
+        position: relative;
+        margin: 0;
+        border: solid 1px darkgray;
+        border-left: none;
+        border-right: none;
+        color: black;
+        background-color: white;
+        text-align: center;
+        outline: none;
+        font-size: medium;
+    }
+
+.action_box {
+    width: 200px;
+    height: 180px;
+    float: left;
+    position: relative;
+}
+
+    .action_box .addto_cart_btn {
+        width: 180px;
+        height: 45px;
+        margin-left: 10px;
+        line-height: 45px;
+        text-align: center;
+        font-size: larger;
+        color: white;
+        background-image: url("../App_Pic/cart_white.png");
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+        background-position: 15px 4px;
+        background-color: red;
+        text-indent: 40px;
+        border: solid 1px red;
+        border-radius: 5px;
+        outline: none;
+        position: absolute;
+        bottom: 8px;
+    }
+
+        .action_box .addto_cart_btn:hover {
+            cursor: pointer;
+        }
+
+        .action_box .addto_cart_btn:active {
+            cursor: pointer;
+            background-color: #c02c38;
+            border: solid 1px #c02c38;
+        }
+
+    .action_box .buynow_btn {
+        width: 150px;
+        height: 45px;
+        margin-left: 25px;
+        line-height: 40px;
+        text-align: center;
+        font-size: larger;
+        color: coral;
+        background-color: linen;
+        border: solid 2px burlywood;
+        border-radius: 5px;
+        outline: none;
+        position: absolute;
+        bottom: 65px;
+    }
+
+        .action_box .buynow_btn:hover {
+            cursor: pointer;
+        }
+
+        .action_box .buynow_btn:active {
+            cursor: pointer;
+            background-color: navajowhite;
+        }
+
+.main .right_box {
+    width: 200px;
+    height: 320px;
+    float: left;
+    position: relative;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.details_col {
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action_box .addto_cart_btn_disable {
+    width: 180px;
+    height: 45px;
+    margin-left: 10px;
+    line-height: 45px;
+    text-align: center;
+    font-size: larger;
+    color: dimgray;
+    background-color: darkgray;
+    border: solid 1px dimgray;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    bottom: 8px;
+}
+
+.action_box .buynow_btn_disable {
+    width: 150px;
+    height: 45px;
+    margin-left: 25px;
+    line-height: 40px;
+    text-align: center;
+    font-size: larger;
+    color: dimgray;
+    background-color: darkgray;
+    border: solid 2px dimgray;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    bottom: 65px;
+}

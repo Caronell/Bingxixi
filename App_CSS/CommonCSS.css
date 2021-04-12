@@ -1,0 +1,520 @@
+﻿.top_shadow {
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.top_panel {
+    z-index: 9999;
+    width: 60%;
+    height: 80%;
+    background-color: white;
+    top: 10%;
+    left: 20%;
+    position: fixed;
+    border: solid 1px black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px gray;
+}
+
+.bill_btn {
+    float: right;
+    margin-right: 0.8em;
+    font-size: large;
+    background-color: coral;
+    border: solid 1px coral;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    color: linen;
+    padding: 5px 15px;
+    transition: all 0.2s;
+}
+
+.bill_btn:hover {
+    cursor: pointer;
+}
+
+.bill_select_btn {
+    float: right;
+    margin-right: 0.8em;
+    font-size: large;
+    background-color: linen;
+    border: solid 1px burlywood;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    color: coral;
+    padding: 5px 15px;
+    transition: all 0.2s;
+}
+
+    .bill_select_btn:hover {
+        cursor: pointer;
+    }
+
+.clear_btn {
+    float: right;
+    margin-right: 0.8em;
+    font-size: large;
+    background-color: red;
+    border: solid 1px red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    transition: all 0.2s;
+    color: white;
+}
+
+.clear_btn:hover {
+    cursor: pointer;
+}
+
+.clear_select_btn {
+    float: right;
+    margin-right: 0.8em;
+    font-size: large;
+    background-color: white;
+    border: solid 1px red;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    transition: all 0.2s;
+    color: red;
+}
+
+    .clear_select_btn:hover {
+        cursor: pointer;
+    }
+
+.tot_price {
+    float: left;
+    margin-left: 0.8em;
+    margin-top: 20px;
+}
+
+.close_btn {
+    width: 32px;
+    height: 32px;
+    float: right;
+    position: relative;
+    margin-right: 0.8em;
+    margin-top: 0.5em;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: url("../App_Pic/closebtn_round.png");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+}
+
+    .close_btn:hover {
+        cursor: pointer;
+        background-image: url("../App_Pic/closebtn_round_hover.png");
+    }
+
+.btn_spacing {
+    margin-right: 0.2em;
+}
+
+.cart_caption {
+    width: 100%;
+    height: 32px;
+    padding: 12px 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.cart_table_title {
+    width: 90%;
+    height: 28px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.cart_table_title .cart_title_item {
+    float: left;
+    position: relative;
+    background-color: lightskyblue;
+    border: solid 1px gainsboro;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: larger;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart_table {
+    width: 90%;
+    height: 60%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-bottom: dashed 1px gainsboro;
+}
+
+.cart_item_line {
+    width: 100%;
+    height: 68px;
+    border-bottom: solid 1px gainsboro;
+}
+
+.cart_bookname_box {
+    width: 40%;
+    height: 68px;
+    float: left;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 6px 0;
+}
+
+    .cart_bookname_box .cart_book_img {
+        width: 64px;
+        height: 64px;
+        float: left;
+        position: relative;
+        border: solid 1px gainsboro;
+        margin-right: 10px;
+        padding: 0;
+        outline: none;
+        vertical-align: top
+    }
+
+    .cart_bookname_box .cart_book_name {
+        width: calc(100% - 100px);
+        height: 68px;
+        line-height: 68px;
+        float: left;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        font-size:small;
+    }
+
+.cart_item_line .cart_book_price_box {
+    width: 15%;
+    height: 68px;
+    float: left;
+    position: relative;
+    line-height: 68px;
+    text-align: center;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.cart_item_line .cart_book_count_box {
+    width: 15%;
+    height: 68px;
+    float: left;
+    position: relative;
+    line-height: 68px;
+    text-align: center;
+    margin: 0;
+    padding: 6px 0;
+}
+
+.cart_item_line .cart_operation_box {
+    width: 29%;
+    height: 68px;
+    line-height: 68px;
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_left {
+        width: auto;
+        height: 30px;
+        float: left;
+        position: relative;
+        margin-top: 15px;
+        text-align: center;
+        border: solid 2px gainsboro;
+        border-radius: 15px 0 0 15px;
+        background-color: white;
+        transition: all 0.2s;
+        outline: none;
+    }
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_mid {
+        width: auto;
+        height: 30px;
+        float: left;
+        position: relative;
+        margin-top: 15px;
+        text-align: center;
+        border: solid 2px gainsboro;
+        border-left: none;
+        border-right: none;
+        background-color: white;
+        transition: all 0.2s;
+        outline: none;
+    }
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_right {
+        width: auto;
+        height: 30px;
+        float: left;
+        position: relative;
+        margin-top: 15px;
+        text-align: center;
+        border: solid 2px gainsboro;
+        border-radius: 0 15px 15px 0;
+        background-color: white;
+        transition: all 0.2s;
+        outline: none;
+    }
+
+        .cart_item_line .cart_operation_box .cart_oper_btn_left:hover {
+            cursor: pointer;
+            background-color: whitesmoke;
+        }
+
+        .cart_item_line .cart_operation_box .cart_oper_btn_left:active {
+            cursor: pointer;
+            background-color: gainsboro;
+        }
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_mid:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
+    }
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_mid:active {
+        cursor: pointer;
+        background-color: gainsboro;
+    }
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_right:hover {
+        cursor: pointer;
+        background-color: whitesmoke;
+    }
+
+    .cart_item_line .cart_operation_box .cart_oper_btn_right:active {
+        cursor: pointer;
+        background-color: gainsboro;
+    }
+
+.bottom {
+    width: 80%;
+    height: 30px;
+    clear: both;
+    border: none;
+    /*margin: 0 auto;*/
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+    .bottom .bottom_con {
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        background: white;
+        font-size: smaller;
+        color: darkgray;
+        text-align: center;
+        padding: 5px;
+    }
+
+.header_box {
+    width: 100%;
+    height: 120px;
+    min-height: 120px;
+    max-height: 120px;
+    border-bottom: solid 2px red;
+    min-width: 1250px;
+}
+
+.header_logo {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    text-shadow: -1px -1px white, 1px 1px #333, 0 0 0.2em darkgray;
+}
+
+    .header_logo a {
+        font-size: xx-large;
+        font-style: italic;
+        font-weight: bold;
+        color: brown;
+        text-decoration: none;
+    }
+
+.header_search_box {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-width: 300px;
+}
+
+    .header_search_box .search {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        border: solid 2px red;
+    }
+
+        .header_search_box .search .SearchText {
+            width: 90%;
+            height: 100%;
+            margin: 0;
+            float: left;
+            padding-top: 12px;
+            text-indent: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .header_search_box .search .SearchBtn {
+            border-style: none;
+            border-color: inherit;
+            border-width: medium;
+            width: 10%;
+            height: 100%;
+            margin: 0;
+            float: left;
+            background-color: red;
+            outline: none;
+            background-image: url('../App_Pic/search.png');
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: medium;
+            min-width: 32px;
+            padding-top: 20px;
+        }
+
+            .header_search_box .search .SearchBtn:hover {
+                cursor: pointer;
+            }
+
+    .header_search_box .hot_search {
+        width: 100%;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+        .header_search_box .hot_search .hot_contains {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: small;
+            color: darkgray;
+            overflow: hidden;
+        }
+
+            .header_search_box .hot_search .hot_contains .hot_title {
+                width: auto;
+                height: 100%;
+                margin: auto 0;
+                padding: 0;
+                float: left;
+                position: relative;
+            }
+
+            .header_search_box .hot_search .hot_contains .hot_item {
+                width: auto;
+                height: 100%;
+                margin: auto 0;
+                margin-left: 0.4em;
+                margin-right: 1em;
+                padding: 0;
+                float: left;
+                position: relative;
+            }
+
+                .header_search_box .hot_search .hot_contains .hot_item:hover {
+                    cursor: pointer;
+                    color: red;
+                    text-decoration: underline;
+                }
+
+
+.cart_box {
+    width: 25%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+}
+
+    .cart_box .cart_contains {
+        width: 240px;
+        height: 44px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+        .cart_box .cart_contains .cart_btn {
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url('../App_Pic/cart_white.png');
+            background-size: 24px 24px;
+            background-repeat: no-repeat;
+            background-position: 8px 8px;
+            background-color: red;
+            color: white;
+            float: left;
+            position: relative;
+            font-size: medium;
+            text-indent: 25px;
+            border: solid 2px red;
+            outline: none;
+        }
+
+            .cart_box .cart_contains .cart_btn:hover {
+                cursor: pointer;
+                background-image: url('../App_Pic/cart_red.png');
+                background-color: whitesmoke;
+                color: red;
+            }
+
+        .cart_box .cart_contains .ordet_btn {
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            color: dimgray;
+            float: left;
+            position: relative;
+            font-size: medium;
+            text-align: center;
+            border: solid 2px lightgray;
+            border-left: none;
+            outline: none;
+        }
+
+            .cart_box .cart_contains .ordet_btn:hover {
+                cursor: pointer;
+            }

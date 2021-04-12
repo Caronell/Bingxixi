@@ -1,0 +1,134 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body {
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#004574,endcolorstr=#175f8f,gradientType=0);
+    margin: 0;
+    padding: 0;
+    background-color: rgba(20,92,139,1);
+}
+
+a:link {
+    COLOR: #a9dcff;
+    TEXT-DECORATION: none
+}
+
+a:visited {
+    COLOR: #a9dcff;
+    TEXT-DECORATION: none
+}
+
+#CenterAreaBg {
+    float: left;
+    background: url("../App_Pic/adminlogin/login_bg.gif") repeat-x;
+    width: 100%;
+    height: 569px;
+}
+
+#CenterArea {
+    position: absolute;
+    left: 240px;
+    float: left;
+    background: url("../App_Pic/adminlogin/login.gif") no-repeat;
+    height: 569px;
+    width: 776px;
+}
+
+#LogoImg {
+    padding-left: 180px;
+    padding-top: 200px;
+    float: left;
+    width: 100%;
+    color: silver;
+    font-weight: bold;
+    font-size: x-large;
+    font-style: italic;
+    text-shadow: -1px -1px white, 1px 1px #333, 0 0 0.2em darkgray;
+}
+
+#LoginInfo {
+    padding-top: 40px;
+    padding-left: 215px;
+    float: left;
+    width: 360px;
+    height: 145px;
+}
+
+    #LoginInfo tr {
+        height: 23px;
+    }
+
+.Subject {
+    color: ghostwhite;
+    font-size: 11pt;
+    padding-left: 15px;
+    padding-right: 5px;
+    text-align: right;
+    letter-spacing: 0.5em;
+}
+
+.TextField {
+    color: #1e71a8;
+    font-size: 12px;
+    width: 168px;
+    height: 19px;
+    padding-right: 9px;
+    outline: none;
+    text-indent: 5px;
+}
+
+.PopUpButton {
+    color: #1e71a8;
+    font-size: 12px;
+    width: 126px;
+    height: 19px;
+    padding-right: 9px;
+}
+
+#LoginBtn {
+    float: right;
+    padding-top: 30px;
+    padding-right: 270px;
+    width: 100px;
+}
+
+#ImgCode {
+    padding-top: 1px;
+    padding-left: 2px;
+    float: left;
+}
+
+.TextField_ImgCode {
+    color: #1e71a8;
+    font-size: 12px;
+    width: 105px;
+    height: 19px;
+}
+
+#CopyRight {
+    padding-top: 25px;
+    padding-left: 450px;
+    float: left;
+    color: #4c91bf;
+    font-size: 12px;
+}
+
+    #CopyRight a:link {
+        COLOR: #4c91bf;
+        TEXT-DECORATION: none
+    }
+
+    #CopyRight a:visited {
+        COLOR: #4c91bf;
+        TEXT-DECORATION: none
+    }
+
+    #CopyRight a:active {
+        COLOR: #4c91bf;
+        TEXT-DECORATION: none
+    }
+
+    #CopyRight a:hover {
+        COLOR: #4c91bf;
+        TEXT-DECORATION: underline;
+    }
